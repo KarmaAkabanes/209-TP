@@ -1,0 +1,120 @@
+#titre {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100%;
+    font-style: normal;
+}
+
+#pres {
+    font-family: "Yeseva One", serif;
+    font-weight: 100%;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: black;
+    color: azure;
+}
+
+p {
+    color: gray;
+}
+
+#choix {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: black;
+    color: white;
+}
+
+button:focus,
+button:active {
+    background-color: green;
+}
+
+.green-text {
+    color: green;
+}
+
+footer {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: block;
+        padding-left: 25%;
+    }
+
+    #image {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+    }
+
+    main {
+        width: auto;
+        margin: 0 auto;
+    }
+    #image img {
+        width: 100%;
+      }
+      #choix {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        display: block;
+        padding-left: 25%;
+    }
+
+    #image {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+    }
+
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #image img {
+        width: 100%;
+      }
+      #choix {
+        width: 100%;
+    }
+}
